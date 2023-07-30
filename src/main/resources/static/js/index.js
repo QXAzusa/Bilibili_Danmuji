@@ -647,7 +647,7 @@ const danmuku = {
         var type_index = 0;
         switch (type) {
             case "danmu":
-                return `<div class="danmu-child" uid="` + d.uid + `">` + danmuku.type(type_index) + danmuku.time(d,type_index) + danmuku.medal(d) + danmuku.guard(d) + danmuku.vip(d) + danmuku.manager(d) + danmuku.ul(d) + danmuku.dname(d) + danmuku.dmessage(d) + danmuku.tips(d) + `</div>`;
+                return `<div class="danmu-child" uid="` + d.uid + `">` + danmuku.type(type_index) + danmuku.time(d,type_index) + danmuku.medal(d) + danmuku.guard(d) + danmuku.vip(d) + danmuku.manager(d) + danmuku.ul(d) + danmuku.dname(d) + `(`+ d.uid +`)` + danmuku.dmessage(d) + danmuku.tips(d) + `</div>`;
             case "gift":
                 type_index=1;
                 d.timestamp = d.timestamp * 1000;
